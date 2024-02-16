@@ -1389,7 +1389,6 @@ Page Heading Style
 .page-heading .buttons .border-button {
   margin-left: 15px;
 }
-
 /* 
 ---------------------------------------------
 Explore Style
@@ -1500,7 +1499,7 @@ Explore Style
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 400px 0px 120px 0px;
+  padding: 150px 0px 120px 0px;
   position: relative;
 }
 
