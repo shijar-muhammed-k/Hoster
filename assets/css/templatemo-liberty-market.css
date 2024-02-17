@@ -2346,3 +2346,26 @@ margin-top: 50px;
 .item.sercive-list img {
   margin-top: 0;
 }
+
+.our-team img {
+  margin-top: 0 !important;
+}
+
+.our-team.item .right-content {
+  margin-left: 5px;
+  width: 70%;
+  bottom: 20px;
+  position: absolute;
+  text-align: center;
+  z-index: 55;
+}
+
+.our-team.item .right-content span.author {
+  display: flex;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+
+.our-team.item:hover > .right-content {
+  scale: 1.1;
+}
