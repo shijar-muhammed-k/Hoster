@@ -2327,3 +2327,22 @@ margin-top: 50px;
 .footer-share i {
   color: #fff;
 }
+
+.item.sercive-list li {
+  color: #fff;
+  text-align: left;
+  margin: 10px;
+}
+
+.item.sercive-list li {
+  margin-top: 10px;
+}
+
+.item.sercive-list {
+  min-height: 600px;
+  max-height: 700px;
+}
+
+.item.sercive-list img {
+  margin-top: 0;
+}
