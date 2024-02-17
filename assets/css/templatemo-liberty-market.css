@@ -2201,7 +2201,8 @@ body {
 }
 .contact_us{
  background-color: #f1f1f1;
- /* padding: 120px 0px; */
+ padding: 0px !important;
+ border-radius: 25px;
 }
 
 .contact_inner{
@@ -2211,7 +2212,7 @@ body {
  border-radius: 25px;
 }
 .contact_field{
- padding: 60px 340px 90px 100px;
+ padding: 60px 450px 90px 100px;
 }
 .right_conatct_social_icon{
  height: 100%;
@@ -2250,10 +2251,10 @@ color: #000;
  position: absolute;
  background-color: #2d2d2d;
  right: 1px;
- top: 18%;
- height: 340px;
+ top: 0;
+ height: 100%;
  width: 340px;
- padding: 40px;
+ padding: 150px 40px 40px 40px;
  border-radius: 25px 0 0 25px;
  color: #fff;
 }
@@ -2263,7 +2264,7 @@ color: #000;
 }
 
 .info_single{
- margin: 30px 0px;
+ margin: 10px 0px;
 }
 .info_single i{
  margin-right: 15px;
@@ -2311,4 +2312,18 @@ button.contact_form_submit {
 margin-top: 50px;
  border-radius: 30px;
  overflow: hidden;
+}
+
+.about-us-description {
+  color: #fff;
+}
+
+.footer-share {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.footer-share i {
+  color: #fff;
 }
