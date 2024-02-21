@@ -2208,7 +2208,7 @@ body {
 .contact_inner{
  background-color: #fff;
  position: relative;
- box-shadow: 20px 22px 44px #cccc;
+ /* box-shadow: 20px 22px 44px #cccc; */
  border-radius: 25px;
 }
 .contact_field{
@@ -2250,12 +2250,12 @@ color: #000;
 .contact_info_sec {
  position: absolute;
  background-color: #2d2d2d;
- right: 1px;
+ right: -1px;
  top: 0;
  height: 100%;
  width: 340px;
  padding: 150px 40px 40px 40px;
- border-radius: 25px 0 0 25px;
+ border-radius: 0 25px 25px 0;
  color: #fff;
 }
 .contact_info_sec h4{
@@ -2368,4 +2368,16 @@ margin-top: 50px;
 
 .our-team.item:hover > .right-content {
   scale: 1.1;
+}
+
+.works .item img {
+  margin-top: 0 !important;
+}
+
+.works .item .col-lg-3 {
+  margin-top: 25px;
+}
+
+.works .item span.category {
+  text-align: left !important;
 }
