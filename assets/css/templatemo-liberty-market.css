@@ -737,7 +737,7 @@ Header Style
   .header-area .main-nav .nav li {
     width: 100%;
     background: #fff;
-    border-bottom: 1px solid #eee;
+    /* border-bottom: 1px solid #eee; */
     padding-left: 0px !important;
     padding-right: 0px !important;
   }
@@ -784,6 +784,26 @@ Header Style
   .header-area .main-nav .nav li.submenu:hover ul,
   .header-area .main-nav .nav li.submenu:focus ul {
     height: 0px;
+  }
+  .contact_inner {
+    display: flex !important;
+    flex-direction: column !important; 
+    padding: 25px !important;
+    gap: 20px !important;
+  }
+
+  .contact_field {
+    padding: 0 !important;
+  }
+
+  .contact_info_sec {
+    position: relative !important;
+    border-radius: 0 !important;
+    width: 100% !important;
+  }
+
+  .categories .item:hover {
+    scale: 1 !important;
   }
 }
 

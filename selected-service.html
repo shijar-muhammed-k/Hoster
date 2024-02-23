@@ -244,10 +244,12 @@ https://templatemo.com/tm-577-liberty-market
 
     
       function highlight(page) {
-        console.log('da')
-        page.style.scale = '1.1';
+        page.scrollIntoView({behavior: 'smooth'});
         page.style.opacity = '1';
         page.style.border = 'none';
+        if (window.innerWidth > 786) {
+          page.style.scale = '1.1';
+        }
       }
     }
   </script>
