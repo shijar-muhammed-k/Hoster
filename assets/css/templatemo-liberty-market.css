@@ -788,8 +788,11 @@ Header Style
   .contact_inner {
     display: flex !important;
     flex-direction: column !important; 
-    padding: 25px !important;
     gap: 20px !important;
+  }
+  
+  .contact_inner .row{
+    margin: 25px !important;
   }
 
   .contact_field {
@@ -800,10 +803,15 @@ Header Style
     position: relative !important;
     border-radius: 0 !important;
     width: 100% !important;
+    right: 0 !important;
   }
 
   .categories .item:hover {
     scale: 1 !important;
+  }
+
+  .footer-share {
+    flex-direction: column;
   }
 }
 
@@ -907,7 +915,7 @@ Categories & Collections Style
 }
 
 .categories-collections:after {
-  background-image: url(/assets/images/category-collection-dec.png);
+  /* background-image: url(/assets/images/category-collection-dec.png); */
   width: 300px;
   height: 282px;
   position: absolute;
@@ -2153,7 +2161,7 @@ body {
   }
   .categories .item {
     margin-bottom: 35px;
-    min-height: 0;
+    min-height: 190px;
   }
   .create-nft .section-heading,
   .currently-market .section-heading {
@@ -2401,4 +2409,11 @@ margin-top: 50px;
 
 .works .item span.category {
   text-align: left !important;
+}
+
+.share-btns {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
 }
