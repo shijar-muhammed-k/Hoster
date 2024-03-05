@@ -405,7 +405,7 @@ Header Style
 */
 
 .background-header {
-  background-color: #000 !important;
+  background-color: #ffffff !important;
   height: 70px !important;
   position: fixed !important;
   top: 0 !important;
@@ -436,7 +436,7 @@ Header Style
   min-height: 80px;
   background: transparent;
   display: flex;
-  background-color: #000;
+  background-color: #ffffff;
   padding: 15px 30px;
   border-radius: 50px;
 }
@@ -493,8 +493,8 @@ Header Style
   font-weight: 500;
   font-size: 14px;
   text-transform: capitalize;
-  /* color: #2a2a2a; */
-  color: #fff;
+  color: #2a2a2a;
+  /* color: #fff; */
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -697,7 +697,7 @@ Header Style
     width: 100%;
   }
   .header-area {
-    background-color: #000;
+    background-color: #ffffff;
     padding: 0px 15px;
     height: 100px;
     box-shadow: none;
@@ -733,12 +733,12 @@ Header Style
     margin-top: 70px !important;
   }
   .header-area .main-nav .nav li:first-child {
-    /* border-top: 1px solid #eee; */
-    border-top: 1px solid #000;
+    border-top: 1px solid #eee;
+    /* border-top: 1px solid #000; */
   }
   .header-area .main-nav .nav li {
     width: 100%;
-    background: #000;
+    background: #ffffff;
     /* border-bottom: 1px solid #eee; */
     padding-left: 0px !important;
     padding-right: 0px !important;
@@ -748,10 +748,10 @@ Header Style
     line-height: 50px !important;
     padding: 0px !important;
     border: none !important;
-    background: #000 !important;
-    color: #fff !important;
-    /* background: #fff !important; */
-    /* color: #1e1e1e !important; */
+    /* background: #000 !important;
+    color: #fff !important; */
+    background: #fff !important;
+    color: #1e1e1e !important;
   }
   .header-area .main-nav .nav li a:hover {
     background: #fff !important;
@@ -951,7 +951,7 @@ Categories & Collections Style
 }
 
 .categories .item .icon img {
-  max-width: 31px;
+  max-width: 40px;
 }
 
 .categories .item h4 {
@@ -2422,3 +2422,19 @@ margin-top: 50px;
   gap: 15px;
   align-items: center;
 }
+
+
+@media all and (max-width: 768px) {
+  .background-header .main-nav .logo img {
+    position: relative !important;
+    top: -5px !important;
+  }
+
+  .contact-page {
+    padding: 0 !important;
+  }
+
+  .contact-page .contact_info_sec {
+    top: 5px !important;
+  }
+  }
