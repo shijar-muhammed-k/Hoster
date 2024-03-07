@@ -458,9 +458,9 @@ Header Style
   width: 223px;
 }
 
-.background-header .main-nav .logo {
+/* .background-header .main-nav .logo {
   margin-top: 8px;
-}
+} */
 
 .background-header .main-nav .logo img {
   width: 180px;
@@ -2437,4 +2437,29 @@ margin-top: 50px;
   .contact-page .contact_info_sec {
     top: 5px !important;
   }
+
+  #team-members .col-lg-3.col-sm-6{
+    width: 50% !important;
+    height: 32vh;
   }
+  
+  #team-members .item.our-team {
+    padding: 25px;
+  }
+
+  #team-members .item.our-team img {
+    min-height: 200px;
+    max-height: 200px;
+  }
+  
+}
+
+@media all and (min-width: 768px) {
+  .team-member-style {
+    border-radius: 20px;
+    min-width: 195px;
+    min-height:  450px;
+    max-height:  450px;
+  }
+
+}
