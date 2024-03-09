@@ -36,6 +36,9 @@ https://templatemo.com/tm-577-liberty-market
         margin-left: 0 !important;
         margin-right: 0 !important;
       }
+      #team-members .col-lg-3{
+        padding: 0 5px;
+      }
     }
   </style>
   </head>
@@ -178,7 +181,7 @@ https://templatemo.com/tm-577-liberty-market
             </div>
           </div>
         </div>
-        <div class="col-lg-12">
+        <!-- <div class="col-lg-12">
           <div class="collections">
             <div class="row">
               <div class="col-lg-12">
@@ -226,7 +229,7 @@ https://templatemo.com/tm-577-liberty-market
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -240,7 +243,7 @@ https://templatemo.com/tm-577-liberty-market
             <h2>Meet Our <em>Team</em>.</h2>
           </div>
         </div>
-        <div class="col-lg-12">
+        <div class="col-lg-12" style="padding: 0;">
           <div class="row" id="team-members">
           </div>
           <div class="row">
@@ -271,11 +274,11 @@ https://templatemo.com/tm-577-liberty-market
                               <div class="contact_field">
                                   <h3>Contatc Us</h3>
                                   <p>Feel Free to contact us any time. We will get back to you as soon as we can!.</p>
-                                  <input type="text" class="form-control form-group" placeholder="Name" />
-                                  <input type="email" class="form-control form-group" placeholder="Email" />
-                                  <input type="tel" class="form-control form-group" placeholder="Phone" />
-                                  <textarea class="form-control form-group" placeholder="Message"></textarea>
-                                  <button class="contact_form_submit">Send</button>
+                                  <input type="text" id="name" class="form-control form-group" placeholder="Name" />
+                                  <input type="email" id="mailid" class="form-control form-group" placeholder="Email" />
+                                  <input type="tel" id="phoneNumber" class="form-control form-group" placeholder="Phone" />
+                                  <textarea id="message" class="form-control form-group" placeholder="Message"></textarea>
+                                  <button class="contact_form_submit" id="sendMail">Send</button>
                               </div>
                           </div>
                       </div>
@@ -288,12 +291,12 @@ https://templatemo.com/tm-577-liberty-market
                       </div>
                       <div class="d-flex info_single align-items-center">
                           <i class="fas fa-envelope-open-text"></i>
-                          <span>info@flightmantra.com</span>
+                          <span>hostertechnologies@gmail.com</span>
                       </div>
-                      <div class="d-flex info_single align-items-center">
+                      <!-- <div class="d-flex info_single align-items-center">
                           <i class="fas fa-map-marked-alt"></i>
                           <span>1000+ Travel partners and 65+ Service city across India, USA, Canada & UAE</span>
-                      </div>
+                      </div> -->
       
                   </div>
               </div>
@@ -333,7 +336,7 @@ https://templatemo.com/tm-577-liberty-market
   <script src="assets/js/popup.js"></script>
   <script src="assets/js/custom.js"></script>
   <script src="assets/js/teams.js"></script>
-
+  <script src="assets/js/send_mail.js"></script>
 
   </body>
 </html>

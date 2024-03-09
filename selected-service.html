@@ -55,7 +55,7 @@ https://templatemo.com/tm-577-liberty-market
   <!-- ***** Preloader End ***** -->
 
   <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky">
+  <header class="header-area header-sticky" id="header">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -101,12 +101,14 @@ https://templatemo.com/tm-577-liberty-market
                       <div class="section-heading">
                         <div class="line-dec"></div>
                         <h2><em>Our services</em>.</h2>
+                        <br><br>
+                        <p>Services Aligned with Excellence</p>
                       </div>
                     </div>
                     <div class="col-lg-3 col-sm-6">
                       <div class="item sercive-list" id="web">
                         <div class="icon">
-                          <img src="assets/images/icon-01.png" alt="">
+                          <img src="assets/images/icons8-backend-development-64.png" alt="">
                         </div>
                         <h4>Web Designing/<br>Web Development</h4>
                         <ul>
@@ -123,7 +125,7 @@ https://templatemo.com/tm-577-liberty-market
                     <div class="col-lg-3 col-sm-6">
                       <div class="item sercive-list" id="ui">
                         <div class="icon">
-                          <img src="assets/images/icon-02.png" alt="">
+                          <img src="assets/images/icons8-web-design-64.png" alt="">
                         </div>
                         <h4>UI/UX<br>Designing</h4>
                         <ul>
@@ -140,7 +142,7 @@ https://templatemo.com/tm-577-liberty-market
                     <div class="col-lg-3 col-sm-6">
                       <div class="item sercive-list" id="marketing">
                         <div class="icon">
-                          <img src="assets/images/icon-03.png" alt="">
+                          <img src="assets/images/icons8-commercial-64.png" alt="">
                         </div>
                         <h4>Digital Marketing</h4>
                         <ul>
@@ -157,7 +159,7 @@ https://templatemo.com/tm-577-liberty-market
                     <div class="col-lg-3 col-sm-6">
                       <div class="item sercive-list" id="logo">
                         <div class="icon">
-                          <img src="assets/images/icon-04.png" alt="">
+                          <img src="assets/images/icons8-design-64.png" alt="">
                         </div>
                         <h4>Logo Design/<br>Branding</h4>
                         <ul>
@@ -211,50 +213,57 @@ https://templatemo.com/tm-577-liberty-market
   <script src="assets/js/custom.js"></script>
 
   <script>
-    var urlParams = new URLSearchParams(window.location.search);
-    var page = urlParams.get('page');
+    window.onload = () => {
+      var urlParams = new URLSearchParams(window.location.search);
+      var page = urlParams.get('page');
 
-    const web = document.getElementById('web');
-    const ui = document.getElementById('ui');
-    const marketing = document.getElementById('marketing');
-    const branding = document.getElementById('logo');
+      const web = document.getElementById('web');
+      const ui = document.getElementById('ui');
+      const marketing = document.getElementById('marketing');
+      const branding = document.getElementById('logo');
 
-    web.style.border = '1px solid red';        
-    web.style.opacity = '0.2';
-    ui.style.border = '1px solid red';        
-    ui.style.opacity = '0.2';
-    branding.style.border = '1px solid red';        
-    branding.style.opacity = '0.2';
-    marketing.style.border = '1px solid red';        
-    marketing.style.opacity = '0.2';
+      web.style.border = '1px solid red';        
+      web.style.opacity = '0.2';
+      ui.style.border = '1px solid red';        
+      ui.style.opacity = '0.2';
+      branding.style.border = '1px solid red';        
+      branding.style.opacity = '0.2';
+      marketing.style.border = '1px solid red';        
+      marketing.style.opacity = '0.2';
 
-    switch (page) {
-      case 'web':
-        highlight(web);
-        break;
-      case 'ui':
-        highlight(ui);
-        break;
-      case 'marketing':
-        highlight(marketing);
-        break;
-      case 'branding':
-        highlight(branding);
-        break;
-      default:
-        window.location.href = 'services.html';
-        break;
+      switch (page) {
+        case 'web':
+          highlight(web);
+          break;
+        case 'ui':
+          highlight(ui);
+          break;
+        case 'marketing':
+          highlight(marketing);
+          break;
+        case 'branding':
+          highlight(branding);
+          break;
+        default:
+          window.location.href = 'services.html';
+          break;
 
-    
-      function highlight(page) {
-        page.scrollIntoView({behavior: 'smooth'});
-        page.style.opacity = '1';
-        page.style.border = 'none';
-        if (window.innerWidth > 786) {
-          page.style.scale = '1.1';
-        }
+          function highlight(page) {
+              let header = document.getElementById('header');
+              page.style.opacity = '1';
+              page.style.border = 'none';
+              if (window.innerWidth > 786) {
+                page.style.scale = '1.1';
+              } else {
+                page.scrollIntoView({behavior: 'smooth'});
+                header.style.position = 'absolute';
+                window.addEventListener('scroll' ,() =>{
+                  header.removeAttribute('style');
+                })
+              }
+          }
       }
-    }
+    };
   </script>
 
 </body>

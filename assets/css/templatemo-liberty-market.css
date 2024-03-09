@@ -643,7 +643,7 @@ Header Style
 }
 
 .header-area.header-sticky {
-  min-height: 70px;
+  min-height: 80px;
 }
 
 .header-area.header-sticky .nav li a.active {
@@ -677,9 +677,9 @@ Header Style
     left: 30px;
     top: 15px;
   }
-  .background-header .main-nav .logo {
+  /* .background-header .main-nav .logo {
     top: 0px;
-  }
+  } */
   .background-header .main-nav .border-button {
     top: 0px !important;
   }
@@ -919,15 +919,15 @@ Categories & Collections Style
   position: relative;
 }
 
-.categories-collections:after {
-  /* background-image: url(/assets/images/category-collection-dec.png); */
+/* .categories-collections:after {
+  background-image: url(/assets/images/category-collection-dec.png);
   width: 300px;
   height: 282px;
   position: absolute;
   bottom: 0;
   right: 30px;
   content: "";
-}
+} */
 
 .categories .item {
   background-color: #282b2f;
@@ -2440,7 +2440,7 @@ margin-top: 50px;
 
   #team-members .col-lg-3.col-sm-6{
     width: 50% !important;
-    height: 32vh;
+    /* height: 32vh; */
   }
   
   #team-members .item.our-team {
@@ -2452,6 +2452,10 @@ margin-top: 50px;
     max-height: 200px;
   }
   
+  .our-team.item .right-content {
+    margin-left: 0;
+  }
+
 }
 
 @media all and (min-width: 768px) {
@@ -2461,5 +2465,4 @@ margin-top: 50px;
     min-height:  450px;
     max-height:  450px;
   }
-
 }

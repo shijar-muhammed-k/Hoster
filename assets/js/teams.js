@@ -4,11 +4,11 @@ let team_members = [
     {name: 'Sajna', position: 'UI/UX', img: 'assets/images/sajna.jpg'},
     {name: 'Sherna', position: 'Web Developer', img: 'assets/images/sherna.jpg'},
     {name: 'Ajmal', position: 'QA Engineer', img: 'assets/images/Ajmal.jpeg'},
-    {name: 'Ajmal', position: 'Content Writer', img: 'assets/images/market-01.jpg'},
-    {name: 'Jumar', position: 'Digital Marketing', img: 'assets/images/market-01.jpg'},
-    {name: 'Fahad', position: 'Social Media Management', img: 'assets/images/market-01.jpg'},
-    {name: 'Horus', position: 'Graphics Designer', img: 'assets/images/market-01.jpg'},
-    {name: 'Raoof', position: 'Video Creator', img: 'assets/images/market-01.jpg'},
+    {name: 'Ajmal', position: 'Content Writer', img: 'assets/images/horus.jpg'},
+    {name: 'Jumar', position: 'Digital Marketing', img: 'assets/images/jumar.jpg'},
+    {name: 'Fahad', position: 'Social Media Management', img: 'assets/images/fahad.jpg'},
+    {name: 'Raoof', position: 'Video Creator', img: 'assets/images/Raoof.jpg'},
+    {name: 'Horus', position: 'Graphics Designer', img: 'assets/images/horus.jpg'},
 ]
 
 function createTeamMember(name, position, imageUrl) {
@@ -33,14 +33,22 @@ function createTeamMember(name, position, imageUrl) {
 
     const title = document.createElement('h4');
     title.textContent = `${position}`;
-    title.style.color = '#fff';
+    if(name === 'Fahad') {
+      title.style.color = '#000';
+    } else {
+      title.style.color = '#fff';
+    }
 
     const authorSpan = document.createElement('span');
     authorSpan.className = 'author';
 
     const authorName = document.createElement('h6');
     authorName.innerHTML = `${name}`;
-    authorName.style.color = '#fff'
+    if(name === 'Fahad') {
+      authorName.style.color = '#000';
+    } else {
+      authorName.style.color = '#fff';
+    }
 
     // Append elements to build the structure
     leftImageDiv.appendChild(image);
