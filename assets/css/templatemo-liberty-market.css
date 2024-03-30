@@ -456,6 +456,7 @@ Header Style
 
 .header-area .main-nav .logo img {
   width: 223px;
+  top: 3px;
 }
 
 /* .background-header .main-nav .logo {
@@ -531,7 +532,7 @@ Header Style
   cursor: pointer;
   display: block;
   position: absolute;
-  top: 25px;
+  top: 30px;
   width: 32px;
   height: 40px;
   text-indent: -9999em;
@@ -2428,7 +2429,7 @@ margin-top: 50px;
 @media all and (max-width: 768px) {
   .background-header .main-nav .logo img {
     position: relative !important;
-    top: -5px !important;
+    top: -1px !important;
   }
 
   .contact-page {
