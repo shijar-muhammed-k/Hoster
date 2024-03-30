@@ -81,7 +81,7 @@ function createTeamMember(name, position, imageUrl) {
       return threeRandomValues
   }
 
-  if((document.URL).includes('index')) {
+  if(!(document.URL).includes('teams')) {
     team_members = getRandomTeamMember();
   }
 
