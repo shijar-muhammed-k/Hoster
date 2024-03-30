@@ -1,4 +1,5 @@
-let team_members = [
+document.addEventListener("DOMContentLoaded", () => {
+  let team_members = [
     {name: 'Suhaib', position: 'QA Engineer', img: 'assets/images/suhaib.jpg'},
     {name: 'Shijar', position: 'Software Developer', img: 'assets/images/shijar.jpg'},
     {name: 'Sajna', position: 'UI/UX', img: 'assets/images/sajna.jpg'},
@@ -87,3 +88,4 @@ function createTeamMember(name, position, imageUrl) {
   for (let i = 0; i < team_members.length; i++) {
     createTeamMember(team_members[i].name, team_members[i].position, team_members[i].img);
   }
+});
