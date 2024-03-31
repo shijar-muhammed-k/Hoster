@@ -1536,6 +1536,7 @@ Explore Style
   background-size: cover;
   padding: 150px 0px 120px 0px;
   position: relative;
+  min-height: 100vh;
 }
 
 .discover-items .section-heading {
