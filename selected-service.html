@@ -259,8 +259,8 @@ https://templatemo.com/tm-577-liberty-market
                 page.style.scale = '1.1';
               } else {
                 page.scrollIntoView({behavior: 'smooth'});
-                header.style.position = 'absolute';
-                window.addEventListener('scroll' ,() =>{
+                header.style.display = 'none';
+                window.addEventListener('touchstart' ,() =>{
                   header.removeAttribute('style');
                 })
               }
