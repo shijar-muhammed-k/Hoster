@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {name: 'Sherna', position: 'Web Developer', img: 'assets/images/sherna.jpg'},
     {name: 'Ajmal', position: 'QA Engineer', img: 'assets/images/Ajmal.jpeg'},
     {name: 'Ajmal', position: 'Content Writer', img: 'assets/images/horus.jpg'},
-    {name: 'Jumar', position: 'Digital Marketing', img: 'assets/images/jumar.jpg'},
+    {name: 'Jumar', position: 'Digital Marketing', img: 'assets/images/Jumar.jpeg'},
     {name: 'Fahad', position: 'Social Media Management', img: 'assets/images/fahad.jpg'},
     {name: 'Raoof', position: 'Video Creator', img: 'assets/images/Raoof.jpg'},
     {name: 'Horus', position: 'Graphics Designer', img: 'assets/images/horus.jpg'},
